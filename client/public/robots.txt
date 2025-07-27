@@ -1,0 +1,179 @@
+# Robots.txt for SudokuGame.live
+# Optimized for maximum SEO visibility and proper crawling
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specifically allow major search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Block access to admin and development files (if any)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /build/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+
+# Block access to system files
+Disallow: /*.log
+Disallow: /*.sql
+Disallow: /*.gz
+Disallow: /*.tar
+Disallow: /*.zip
+Disallow: /*.bak
+Disallow: /*.old
+Disallow: /*.backup
+
+# Block duplicate content parameters (if using URL parameters)
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?source=*
+Disallow: /*?campaign=*
+Disallow: /*&utm_*
+Disallow: /*&ref=*
+Disallow: /*&source=*
+Disallow: /*&campaign=*
+
+# Allow important CSS, JS, and image files for proper rendering
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.ico
+Allow: /*.woff
+Allow: /*.woff2
+Allow: /*.ttf
+Allow: /*.eot
+
+# Allow manifest and service worker files
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /service-worker.js
+
+# Block common bot traps and spam URLs
+Disallow: /wp-
+Disallow: /wordpress/
+Disallow: /blog/wp-
+Disallow: /test/
+Disallow: /testing/
+Disallow: /dev/
+Disallow: /development/
+Disallow: /staging/
+Disallow: /beta/
+Disallow: /alpha/
+
+# Block search result pages and filters (if implemented)
+Disallow: /search
+Disallow: /*?search=*
+Disallow: /*?filter=*
+Disallow: /*?sort=*
+Disallow: /*?page=*
+
+# Block infinite scroll or AJAX endpoints
+Disallow: /api/
+Disallow: /ajax/
+Disallow: /*.json
+Disallow: /*.xml$
+
+# Crawl delay for respectful crawling (optional)
+# Crawl-delay: 1
+
+# Sitemap location - VERY IMPORTANT for SEO
+Sitemap: https://sudokugame.live/sitemap.xml
+
+# Additional sitemaps (if you create them later)
+# Sitemap: https://sudokugame.live/sitemap-news.xml
+# Sitemap: https://sudokugame.live/sitemap-images.xml
+# Sitemap: https://sudokugame.live/sitemap-videos.xml
+
+# Block AI training crawlers (optional - protects your content)
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Block aggressive scrapers and content thieves
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Allow beneficial SEO bots
+User-agent: ScreamingFrogSEOSpider
+Allow: /
+
+User-agent: SiteAuditBot
+Allow: /
+
+# Host directive (helps with canonicalization)
+Host: sudokugame.live
+
+# Additional comments for clarity:
+# This robots.txt is optimized for SudokuGame.live
+# Last updated: January 28, 2025
+# 
+# Key features:
+# - Allows all major search engines full access
+# - Blocks development and admin files
+# - Prevents duplicate content indexing
+# - Includes sitemap reference for SEO
+# - Blocks AI training crawlers to protect content
+# - Optimized for Sudoku gaming website
